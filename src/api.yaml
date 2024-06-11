@@ -10,7 +10,29 @@ tags:
     description: Everything about your posts
   - name: user
     description: Operations about user
+  - name: flight
+    description: Operations about flight
 paths:
+  /flights/token:
+    get:
+      tags:
+        - flight    
+      summary: Get token
+      description: Get token data
+      operationId: getToken
+      responses:
+        '200':
+          description: Token fetched
+  /flights/destinations:
+    get:
+      tags:
+        - flight    
+      summary: Get destinations
+      description: Get destinations data
+      operationId: getDestinations
+      responses:
+        '200':
+          description: Destinations fetched          
   /posts:
     get:
       tags:
