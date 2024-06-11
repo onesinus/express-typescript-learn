@@ -13,7 +13,8 @@ const router = Router();
 // Posts routes
 router.get('/', getPostsController);
 router.get('/:id', getPostByIdController);
-router.post('/', validatePost, createPostController);
+// router.post('/', validatePost, createPostController);
+router.post('/', createPostController); // trying to use open api validation instead
 router.put('/:id',validatePost, updatePostController);
 router.delete('/:id', deletePostController);
 
