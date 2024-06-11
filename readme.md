@@ -1,3 +1,6 @@
+# Env setup
+rename file .env.dev.example to .env.dev
+
 # Run the server in development mode
 npm run dev
 

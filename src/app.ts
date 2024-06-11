@@ -8,7 +8,7 @@ import morgan from 'morgan';
 import router from './routes';
 import * as OpenApiValidator from 'express-openapi-validator';
 
-dotenv.config();
+require('dotenv').config({ path: `.env.${process.env.NODE_ENV}` })
 
 const app = express();
 const path = require('path');
